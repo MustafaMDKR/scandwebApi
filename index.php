@@ -15,7 +15,8 @@ set_error_handler("\API\core\ErrorHandler::handleError");
 set_exception_handler("\API\core\ErrorHandler::handleException");
 
 header('Content-type: application/json; charset=UTF-8');
-header('Access-control-allow-origin: *');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Origin: *');
 
 $driver = $_ENV['DRIVER'];
 $host = $_ENV['HOST'];

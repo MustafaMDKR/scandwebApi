@@ -25,12 +25,12 @@ $pass = $_ENV['PASS'];
 
 $parts = explode('/', $_SERVER['REQUEST_URI']);
 
-if ($parts[1] != 'products') {
+if ($parts[2] != 'products') {
     http_response_code(404);
     exit;
 }
 
-$id = $parts[2] ?? null;
+$id = $parts[3] ?? null;
 
 $db = new Database($driver, $host, $name, $user, $pass);
 $model = new ProductModel($db);

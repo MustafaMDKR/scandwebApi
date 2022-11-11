@@ -1,0 +1,17 @@
+{
+    "name": "dash/shopapi",
+    "autoload": {
+        "psr-4": {
+            "API\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mustafa Madkour",
+            "email": "mustafamdkr@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
